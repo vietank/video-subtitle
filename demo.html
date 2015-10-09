@@ -19,20 +19,31 @@
 </head>
 
 <body>
-	<?php for($i = 11; $i <=12; $i++){?>
+
 	<div style="display: table;width: 100%;">
 		<div style="width: 400px;float: left;">
-			<video class="bigschool-video" style="width: 400px;margin-top: 30px;" id="video-<?=$i?>" controls>
+			<video class="bigschool-video" style="width: 400px;margin-top: 30px;" id="video-1" controls>
 				<source src="developerStories-en.webm">
-				<track onload="onTrackLoad(<?=$i?>);" id="entrack-<?=$i?>" label="English subtitles" kind="captions" src="entrack.vtt" srclang="en" default>
+				<track onload="onTrackLoad(1);" id="entrack-1" label="English subtitles" kind="captions" src="entrack.vtt" srclang="en" default>
 			</video>
 	   
 		</div>
-		<div id="display-cues-<?=$i?>" class="display-cues">
-			<p id="start-point-<?=$i?>"><p>
+		<div id="display-cues-1" class="display-cues">
+			<p id="start-point-1"><p>
 		</div>
 	</div>
-	<?php }?>
+	<div style="display: table;width: 100%;">
+		<div style="width: 400px;float: left;">
+			<video class="bigschool-video" style="width: 400px;margin-top: 30px;" id="video-2" controls>
+				<source src="developerStories-en.webm">
+				<track onload="onTrackLoad(2);" id="entrack-2" label="English subtitles" kind="captions" src="entrack.vtt" srclang="en" default>
+			</video>
+	   
+		</div>
+		<div id="display-cues-2" class="display-cues">
+			<p id="start-point-2"><p>
+		</div>
+	</div>
 
     <script>
         $(document).ready(function() {
